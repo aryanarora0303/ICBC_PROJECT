@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="index.js"></script>
+
+    <title>ICBC CLASS 5</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <span class="navbar-brand mb-0 h1">
+            <h3>CLASS 1</h3>
+        </span>
+    </nav>
+
+    <div class="jumbotron ques-container">
+        <div class="display-4">
+            <h3 class="ques-number"></h3>
+            <h3 class="ques"></h3>
+        </div>
+        <img src="" alt="" class="ques-image">
+    </div>
+
+    <div class="jumbotron btn-container">
+        <div class="options-btn-container">
+            <button type="button" class="btn btn-options btn-light" id="btn_1"></button>
+            <button type="button" class="btn btn-options btn-light" id="btn_2"></button>
+            <button type="button" class="btn btn-options btn-light" id="btn_3"></button>
+            <button type="button" class="btn btn-options btn-light" id="btn_4"></button>
+        </div>
+        <div class="btn-ques-scroller">
+            <button type="button" class="btn btn-skip btn-light" id="btn_5">
+                Skip
+                <img src="assets/images/internal/skip-forward-icon-20.jpeg" width="30" height="30" alt="" loading="lazy">
+            </button>
+            <button type="button" class="btn btn-next btn-light" id="btn_6">
+                Next
+                <img src="assets/images/internal/next-button.png" width="30" height="30" alt="" loading="lazy">
+            </button>
+            <div class="confirm-btn-container">
+                <div class="confirm-message-container">
+                    <h5 class="confirm-message-heading"></h5>
+                    <h7 class="confirm-message-subheading"></h7>
+                </div>
+                <div class="btn-container">
+                    <button type="button" class="btn btn-confirm btn-light" id="btn_5">Yes</button>
+                    <button type="button" class="btn btn-confirm-cancel btn-light" id="btn_5">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="progress-container">
+        <div class="correct-answers"></div>
+        <div class="incorrect-answers"></div>
+        <div class="remaining-answers"></div>
+    </div>
+</body>
+
+</html>

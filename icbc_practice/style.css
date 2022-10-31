@@ -1,0 +1,300 @@
+/*-------------
+ Display Config
+ ------------*/
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/*-----
+ Navbar 
+ -----*/
+.navbar {
+    padding: 1rem 2rem;
+    color: white;
+    background: #009de0;
+}
+
+/*-------------
+ Ques Container
+ ------------*/
+.ques-container {
+    display: inline-flex;
+    margin-bottom: 0;
+    background-color: transparent;
+    width: 100%;
+    padding: 2rem;
+    height: 283px;
+}
+
+.ques-container img {
+    margin-left: auto;
+}
+
+.ques-container .display-4 {
+    font-size: 2rem;
+}
+
+.ques-container .display-4.ques-number{
+    color: white;
+    height: max-content;
+    border-radius: 0.25rem;
+    padding: 0 0.5rem;
+    margin: 0 0.5rem;
+    background: #4e4e4e;
+    font-size: 2rem;
+}
+
+.ques-container.results-ques-container {
+    padding: 0.6rem 2rem !important;
+    padding-top: 2rem !important;
+}
+
+/*-------------
+ Audio Container
+ ------------*/
+ .audio-container {
+    display: inline-flex;
+    padding: 0.5rem 2rem;
+    margin-bottom: 0;
+    background-color: transparent;
+ }
+
+ .audio-container .ques-audio {
+     width: 500px;
+     height: 35px;
+ }
+
+/*---------------------
+ Option Error Container
+ --------------------*/
+.option-error-container {
+    padding: 0 2rem;
+    margin: 7px;
+    color: red;
+}
+
+/*-----------------------
+ Button/Options Container
+ ----------------------*/
+.btn-container {
+    padding: 2rem;
+    padding-top: 0.5rem;
+    margin: 1rem 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    width: 100%;
+}
+
+.btn-container.results-btn-container {
+    padding-bottom: 0.5rem !important;
+}
+
+.btn-container .btn-success {
+    color: #ffffff !important;
+    background-color: #28a745 !important;
+    border: #28a745 !important;
+}
+
+.btn-container .btn-success::before {
+    color: #ffffff !important;
+    background-color: #1e7e35 !important;
+    border: #1e7e35 !important;
+}
+
+.btn-container .btn-danger {
+    color: #ffffff !important;
+    background-color: #dc3545 !important;
+    border: #dc3545 !important;
+}
+
+.btn-container .btn-danger::before {
+    color: #ffffff !important;
+    background-color: #aa2936 !important;
+    border: #aa2936 !important;
+}
+
+.btn-container .results-btn:hover,
+.btn-container .results-btn:focus {
+    color: black !important;
+    background-color: white !important;
+    border: 0.5px solid #e4e4e4 !important;
+}
+
+.btn-container .results-btn:hover:before,
+.btn-container .results-btn:focus:before {
+    color: black !important;
+    background-color: #f5f5f5 !important;
+    border: 1px solid #f5f5f5 !important;
+}
+
+.btn-container .btn {
+    display: block;
+    width: 100%;
+    border: 0.5px solid #e4e4e4;
+    margin: 7px;
+    padding: 0.5rem;
+    padding-left: 0;
+    color: black;
+    background-color: white;
+    text-align: left;
+
+    transition-property: background-color;
+    transition-duration: .1s;
+    transition-timing-function: linear;
+}
+
+.btn-container .btn:disabled {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    border: 0.5px solid #e4e4e4;
+    margin: 7px;
+    padding: 0.5rem;
+    padding-left: 0;
+    color: black;
+    background-color: white;
+    text-align: left;
+
+    transition-property: background-color;
+    transition-duration: .1s;
+    transition-timing-function: linear;
+}
+
+.btn-container .btn::before {
+    content: "";
+    position: relative;
+    margin: -8px 0;
+    margin-right: 11px;
+    float: left;
+    padding: 9px 55px;
+    border: 1px solid #f5f5f5;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0.25rem 0 0 0.25rem;
+    color: #009de0;
+    font-weight: 500;
+    color: black;
+    background-color: #f5f5f5;
+
+    transition-property: background-color;
+    transition-duration: .1s;
+    transition-timing-function: linear;
+}
+
+.btn-container .btn:hover {
+    background-color: #f5f5f5;
+}
+
+.btn-container .btn:hover:before{
+    background-color: #d8d7d7;
+    border: 1px solid #d8d7d7;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.btn-container .btn:focus {
+    background-color: #009de0;
+    color: white;
+}
+
+.btn-container .btn:focus:before {
+    outline: none;
+    background-color: #006eb4;
+    border: 1px solid #006eb4;
+    color: white;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.btn-container .btn#btn_1::before {
+    content: 'A';
+}
+.btn-container .btn#btn_2::before {
+    content: 'B';
+}
+.btn-container .btn#btn_3::before {
+    content: 'C';
+}
+.btn-container .btn#btn_4::before {
+    content: 'D';
+}
+
+.btn-container .btn:focus {
+    outline:none;
+    box-shadow: none;
+}
+
+/*---------------
+ Horizontal Ruler
+---------------*/
+hr {
+    /* width: 57.7%; */
+    width: 98%;
+    margin: 0;
+    background-color: black;
+    opacity: 30%;
+}
+
+/*----------------
+ Test Progress Bar
+ ---------------*/
+.progress {
+    margin-bottom: 1rem;
+}
+
+.progress-bar {
+    background: #009de0;
+}
+
+/*----------------
+ Results Container
+----------------*/
+.progress-container {
+    padding: 1rem 2rem;
+    width: fit-content;
+    display: inline-flex;
+}
+
+.progress-container div {
+    display: inline;
+    border: 0.5px solid #e4e4e4;
+    color: black;
+    background-color: white;
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    padding: 0.375rem 0.75rem;
+}
+
+/*----------------------
+ Button Confirm Scroller
+ ---------------------*/
+.btn-ques-scroller {
+    padding: 1rem 2rem;
+    padding-right: 0;
+    margin-left: 37rem;
+    margin-bottom: 11px;
+    /* width: 81%; */
+    width: fit-content;
+    display: inline-flex;
+}
+
+.btn-ques-scroller .btn-next,
+.btn-ques-scroller .btn-confirm {
+    float: right;
+    background: white;
+    color: #009de0;
+    font-weight: 500;
+    border: 1px solid #e4e4e4;
+    margin-left: 0.5rem;
+
+    transition-property: background-color;
+    transition-duration: .1s;
+    transition-timing-function: linear;
+}
+
+.btn-ques-scroller .btn-next:hover,
+.btn-ques-scroller .btn-confirm:hover {
+    background: #f5f5f5;
+}

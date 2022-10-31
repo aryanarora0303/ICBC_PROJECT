@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="index.js"></script>
+
+    <title>Air Brake Test</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <span class="navbar-brand mb-0 h1">Air Brake Practice Test</span>
+    </nav>
+
+    <div class="jumbotron ques-container">
+        <h1 class="display-4 ques-number"></h1>
+        <h1 class="display-4 ques"></h1>
+        <img src="" alt="" class="ques-image">
+    </div>
+
+    <div class="jumbotron audio-container">
+        <audio class="ques-audio" controls>
+            <source class="ques-audio-src" src="" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="option-error-container">
+        <h7 id="option-error"></h7>
+    </div>
+
+    <div class="jumbotron btn-container">
+        <button type="button" class="btn btn-options btn-light" id="btn_1"></button>
+        <button type="button" class="btn btn-options btn-light" id="btn_2"></button>
+        <button type="button" class="btn btn-options btn-light" id="btn_3"></button>
+        <button type="button" class="btn btn-options btn-light" id="btn_4"></button>
+    </div>
+
+    <hr>
+    <div class="progress-container">
+        <div class="correct-answers"></div>
+        <div class="incorrect-answers"></div>
+        <div class="remaining-answers"></div>
+    </div>
+
+    <div class="btn-ques-scroller">
+        <button type="button" class="btn btn-confirm btn-light" id="btn_5">Check Answer</button>
+        <button type="button" class="btn btn-next btn-light" id="btn_5">Next Question</button>
+    </div>
+</body>
+
+</html>

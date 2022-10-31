@@ -1,0 +1,25 @@
+{
+  "name": "air_brake_test",
+  "productName": "air_brake_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "electron .",
+    "del-modules": "rm -rf node_modules/",
+    "build-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --prune=true --out=release-builds --asar",
+    "build-win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --prune=true --out=release-builds --asar",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^10.1.1",
+    "electron-packager": "^15.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
